@@ -18,7 +18,7 @@ class User {
             this->lastName = "";
             this->socialSecurit = "";
         }
-        User(string i, string p, string JMBG) {
+        User(string i, string p, string socialSecurit) {
             this->name = i;
             this->lastName = p;
             this->socialSecurit = socialSecurit;
@@ -40,7 +40,7 @@ class User {
         void setlastName(string p) {
             this->lastName = p;
         }
-        void setsocialSecurit(string JMBG) {
+        void setsocialSecurit(string socialSecurit) {
             this->socialSecurit = socialSecurit;
         }
 
@@ -57,7 +57,7 @@ class User {
                 cin >> this->socialSecurit;
 
                 if (socialSecurit.length() != 13) {
-                    cout << "socialSecurit need da ima 13 cifara" << endl;
+                    cout << "Social Securit need to have 13 number " << endl;
                     cin >> socialSecurit;
                 }   
             }
@@ -65,7 +65,7 @@ class User {
             cout << "------------------------"<< endl;
         }   
 
-        void change_User(string i, string p, string JMBG) {
+        void change_User(string i, string p, string socialSecurit) {
             this->name = i;
             this->lastName = p;
             this->socialSecurit = socialSecurit;
@@ -92,7 +92,7 @@ class Book{
               this->type_book = "";
               this->bar_code = "";
          }
-       Book(string ime_knjige, string autor_knjige, string zanr_knjige, string bar_code) {
+       Book(string name_book, string author_book, string type_book, string bar_code) {
            this->name_book = name_book;
            this->author_book = author_book;
            this->type_book = type_book;
@@ -178,43 +178,14 @@ class Book{
        }
 
        void print_book() {
-           cout << "Ime knjige: " << name_book << endl;
-           cout << "Autor knjige: " << author_book << endl;
-           cout << "Zanr knjige: " << type_book << endl;
-           cout << "Bar code knjige: " << bar_code << endl;
+           cout << "Print book: " << name_book << endl;
+           cout << "Author of book: " << author_book << endl;
+           cout << "Type_book: " << type_book << endl;
+           cout << "Bar code book: " << bar_code << endl;
            cout << "------------------------"<< endl;
        }
+       
 };
-
-
-void menu1(){
-    cout << "1. Add user" << endl;
-    cout << "2. Add book" << endl;
-    cout << "3. Ispis clana" << endl;
-    cout << "4. Ispis knjige" << endl;
-    cout << "5. Uredi clana" << endl;
-    cout << "6. Uredi knjigu" << endl;
-    cout << "7. Izbrisi clana" << endl;
-    cout << "8. Izbrisi knjigu" << endl;
-    cout << "9. Izlaz" << endl;
-}
-
-
-void menu_user(){
-    cout << "1. Unos clana" << endl;
-    cout << "2. Ispis clana" << endl;
-    cout << "3. Uredi clana" << endl;
-    cout << "4. Izbrisi clana" << endl;
-    cout << "5. Izlaz" << endl;
-}
-
-void menu_book(){
-    cout << "1. Unos knjige" << endl;
-    cout << "2. Ispis knjige" << endl;
-    cout << "3. Uredi knjigu" << endl;
-    cout << "4. Izbrisi knjigu" << endl;
-    cout << "5. Izlaz" << endl;
-}
 
 void add_user(vector<User>& vektor_user){
     cout << "Unos clana" << endl;
