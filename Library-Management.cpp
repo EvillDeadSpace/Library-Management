@@ -10,7 +10,6 @@ class User {
         string name;
         string lastName;
         string socialSecurit;
-        string posudena_knjiga;
 
     public:
         User(){
