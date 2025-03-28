@@ -1,6 +1,29 @@
-# Library Management System
+<div align="center">
+  <h1>📚 Library Management System</h1>
+  <p>A modern C++ console application for efficient library management</p>
 
-A C++ console application for managing library books and users with basic CRUD (Create, Read, Update, Delete) operations.
+![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![STL](https://img.shields.io/badge/STL-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white)
+![License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
+
+</div>
+
+## 📋 Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Screenshots](#screenshots)
+- [Contributing](#contributing)
+- [Author](#author)
+- [License](#license)
+
+## 🎯 Overview
+
+A robust console-based Library Management System built with C++. The system provides comprehensive CRUD operations for managing both library users and books, featuring data validation and an intuitive menu-driven interface.
 
 ## Features
 
